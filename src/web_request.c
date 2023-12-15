@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-
+#include <stdio.h>
 #include "web_request.h"
 
 #if !defined(CONTAINER_OF)
