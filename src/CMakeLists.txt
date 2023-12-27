@@ -40,6 +40,9 @@ IF(MSVC)
   LIST(APPEND SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/../win32/src/getopt_long.c)
 ENDIF(MSVC)
 
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
+
 add_executable(s5proxy ${SOURCE_FILES})
 
 set (s5_lib_common
